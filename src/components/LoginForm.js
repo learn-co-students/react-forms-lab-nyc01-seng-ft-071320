@@ -15,8 +15,8 @@ class LoginForm extends React.Component {
   }
 
   submbitHandler = (e) => {
-    let username = this.state.username
-    let password = this.state.password
+    const username = this.state.username
+    const password = this.state.password
     if (username && password) {
       this.props.handleLogin({ username, password })
     }
